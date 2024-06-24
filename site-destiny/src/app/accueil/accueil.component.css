@@ -3,25 +3,52 @@ body{
 }
 header{
     width: 100%;
-    height: 18vh;
-    background-image: url(../images/Rectangle\ 6.png);
-    background-size:cover;
+    height: 30vh;
+    background-image: url(../images/bannière.png);
+    object-fit: cover;
+    background-position:center;
     position: relative;
     h1{
         color: white;
         font-size: 60px;
         position: absolute;
-        
-        translate: 100% 50%;
+        top: 30%;
+        left: 40%;
+    }
+    ul{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 7vh;
+        position: absolute;
+        bottom: 0%;
+        border: solid 2px white;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
     }
 }
 main{
-    background-image: url(../images/Rectangle\ 7.png);
+    background-image: url(../images/fond.png);
     background-position: center;
     position: relative;
     width: 100%;
     height: 90vh;
     color: white;
+    .container{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 50vw;
+        height: 60vh;
+        border-radius: 15px;
+        translate: 50% 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+    }
 }
 footer{
     background-color: transparent;
@@ -38,6 +65,7 @@ footer{
         flex-direction: row;
         gap: 15px;
         li{
+            font-size: 30px;
             a{
                 color: white;
                 text-decoration: none;
@@ -45,3 +73,4 @@ footer{
         }
     }
 }
+
