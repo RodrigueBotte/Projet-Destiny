@@ -9,24 +9,12 @@
 </header>
 <main>
     <div class="container">
-        @for (news of actuList; track news) {
-            <div>
-                <p>{{news}}</p>
-            </div>
-        }
-        <!-- <div class="info1" *ngFor="let newsItem of actuList">
+        <div class="info1" *ngFor="let newsItem of actuList">
             <h2>{{ newsItem.titre }}</h2>
             <h3>{{ newsItem.sousTitre }}</h3>
-            <img [src]="'assets/imageActu'+newsItem.img" alt="{{ newsItem.titre }}">
+            <img [src]="'assets/imageActu/'+newsItem.img" alt="{{ newsItem.titre }}">
             <a [href]="newsItem.url" target="_blank"></a>
-    </div> -->
-        <!-- <div class="info1">
-            
-            <a href="https://www.bungie.net/7/fr/News/article/destiny_2_update_8_0_0_5">
-            <img [src]="imageMaintenance" alt="Mise à jour"><br>Mise à Jour 8.0.0. de Destiny 2</a>
-        </div> -->
-        <div class="info2">deuxième paquet</div>
-        <div class="info3">troisième paquet</div>
+        </div>
     </div>
 </main>
 <footer>
