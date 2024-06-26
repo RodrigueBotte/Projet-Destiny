@@ -1,20 +1,30 @@
 <header>
-    <h1>Projet Destiny</h1>
+    <h1 (click)="goToAccueil()">Projet Destiny</h1>
     <ul>
-        <li>Actu</li>
-        <li>Build</li>
-        <li>Raid Planning</li>
-        <li>Guide</li>
+        <li (click)="goToActu()">Actu</li>
+        <li (click)="goToBuild()">Build</li>
+        <li (click)="goToRaid()">Raid Planning</li>
+        <li (click)="goToGuide()">Guide</li>
     </ul>
 </header>
 <main>
     <div class="container">
-        <div class="info1">
+        @for (news of actuList; track news) {
+            <div>
+                <p>{{news}}</p>
+            </div>
+        }
+        <!-- <div class="info1" *ngFor="let newsItem of actuList">
+            <h2>{{ newsItem.titre }}</h2>
+            <h3>{{ newsItem.sousTitre }}</h3>
+            <img [src]="'assets/imageActu'+newsItem.img" alt="{{ newsItem.titre }}">
+            <a [href]="newsItem.url" target="_blank"></a>
+    </div> -->
+        <!-- <div class="info1">
+            
             <a href="https://www.bungie.net/7/fr/News/article/destiny_2_update_8_0_0_5">
-            <img [src]="imageMaintenance" alt="Mise à jour">Mise à Jour 8.0.0. de Destiny 2</a><br>
-            <img src="./assets/imageActu/resume.png" alt="ça marche pas"><br>
-            <!-- <img src="./images/maintenance.png" alt="Toujours pas"> -->
-        </div>
+            <img [src]="imageMaintenance" alt="Mise à jour"><br>Mise à Jour 8.0.0. de Destiny 2</a>
+        </div> -->
         <div class="info2">deuxième paquet</div>
         <div class="info3">troisième paquet</div>
     </div>

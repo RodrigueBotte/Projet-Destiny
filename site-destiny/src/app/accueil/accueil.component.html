@@ -9,7 +9,17 @@
 </header>
 <main>
     <div class="container">
-        <div class="info1">premier paquet</div>
+        <!-- @for (news of actuList; track news) {
+            <div>
+                <p>news.titre</p>
+            </div>
+        } -->
+        <div class="info1" *ngIf="actuList">
+                <h2>{{ actuList.titre }}</h2>
+                <h3>{{ actuList.sousTitre }}</h3>
+                <img [src]="'assets/imageActu'+actuList.img" alt="{{ actuList.titre }}">
+                <a [href]="actuList.url" target="_blank"></a>
+        </div>
         <div class="info2">deuxième paquet</div>
         <div class="info3">troisième paquet</div>
     </div>

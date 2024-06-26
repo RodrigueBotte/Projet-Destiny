@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { BuildComponent } from './build/build.component';
 import { RaidPlanningComponent } from './raid-planning/raid-planning.component';
 import { GuideComponent } from './guide/guide.component';
+import { CommonModule } from '@angular/common';
 
 export const routes: Routes = [
     {path: "", component: AccueilComponent},
@@ -15,7 +16,17 @@ export const routes: Routes = [
     {path: "accueilPath", component: AccueilComponent}
 ];
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    declarations: [
+        AccueilComponent,
+        ActuComponent,
+        BuildComponent,
+        GuideComponent,
+        RaidPlanningComponent,
+      ],
+    imports: [
+        RouterModule.forRoot(routes),
+        CommonModule    
+    ],
     exports: [RouterModule]
   })
   export class AppRoutingModule { }

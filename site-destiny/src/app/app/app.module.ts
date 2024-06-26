@@ -6,22 +6,22 @@ import { BuildComponent } from '../build/build.component';
 import { GuideComponent } from '../guide/guide.component';
 import { RaidPlanningComponent } from '../raid-planning/raid-planning.component';
 import { AppRoutingModule } from '../app.routes';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgFor } from '@angular/common';
 
 
 
 @NgModule({
-  declarations: [
-    AccueilComponent,
-    ActuComponent,
-    BuildComponent,
-    GuideComponent,
-    RaidPlanningComponent
-  ],
+  // declarations: [
+  //   AccueilComponent,
+  //   ActuComponent,
+  //   BuildComponent,
+  //   GuideComponent,
+  //   RaidPlanningComponent,
+  // ],
   imports: [
-    CommonModule,
-    AppRoutingModule,
-    BrowserModule
+    // CommonModule,
+    // AppRoutingModule,
+    // NgFor
   ]
 })
 export class AppModule { }
