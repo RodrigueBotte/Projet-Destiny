@@ -7,5 +7,7 @@ import { Router } from '@angular/router';
   styleUrl: './actu.component.css'
 })
 export class ActuComponent {
+  imageMaintenance: string = "../../../assets/imageActu/maintenance.png";
+  imageResume : string ="../../../assets/imageActu/resume.png";
   
 }

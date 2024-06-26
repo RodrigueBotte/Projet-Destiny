@@ -14,9 +14,10 @@ header {
     h1 {
         color: white;
         font-size: 60px;
-
+        font-family: oxanium;
         text-align: center;
         padding-top: 60px;
+        cursor: pointer;
     }
 
     ul {
@@ -34,6 +35,7 @@ header {
 
         li{
             cursor: pointer;
+            font-family: oxanium;
         }
     }
 }
@@ -89,4 +91,13 @@ footer {
             }
         }
     }
+}
+
+@font-face {
+    font-family: tradeWinds;
+    src: url(/assets/TradeWinds-Regular.ttf);
+}
+@font-face {
+    font-family: oxanium;
+    src: url(/assets/Oxanium-VariableFont_wght.ttf);
 }

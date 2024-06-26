@@ -59,7 +59,11 @@ body{
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-    
+            
+            img{
+                width: 300px;
+                height: 200px;
+            }
     
         }
     }
