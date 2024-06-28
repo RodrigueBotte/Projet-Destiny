@@ -9,11 +9,12 @@
 </header>
 <main>
     <div class="container">
-        <div class="info1" *ngFor="let newsItem of actuList">
-            <h2>{{ newsItem.titre }}</h2>
-            <h3>{{ newsItem.sousTitre }}</h3>
-            <img [src]="'assets/imageActu/'+newsItem.img" alt="{{ newsItem.titre }}">
-            <a [href]="newsItem.url" target="_blank"></a>
+        <div class="info" *ngFor="let newsItem of actuList">
+            <a [href]="newsItem.url" target="_blank">
+                <p>{{ newsItem.titre }}</p>
+                <p>{{ newsItem.sousTitre }}</p>
+                <img [src]="'assets/imageActu/'+newsItem.img" alt="{{ newsItem.titre }}">
+            </a>
         </div>
     </div>
 </main>
