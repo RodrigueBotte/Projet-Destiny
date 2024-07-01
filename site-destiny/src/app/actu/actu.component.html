@@ -11,17 +11,22 @@
     <div class="container">
         <div class="info" *ngFor="let newsItem of actuList">
             <a [href]="newsItem.url" target="_blank">
-                <p>{{ newsItem.titre }}</p>
-                <p>{{ newsItem.sousTitre }}</p>
-                <img [src]="'assets/imageActu/'+newsItem.img" alt="{{ newsItem.titre }}">
+                <div>
+                    <p>{{ newsItem.titre }}</p>
+                    <p>{{ newsItem.sousTitre }}</p>
+                    <img [src]="'assets/imageActu/'+newsItem.img" alt="{{ newsItem.titre }}">
+                </div>
             </a>
         </div>
     </div>
 </main>
 <footer>
     <ul>
-        <li><a href="https://discord.gg/Brp8G2S9" target="_blank"><i class="fa-brands fa-discord" style="color: #ffffff;"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/rodrigue-botte-b828332a3/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
-        <li><a href="https://github.com/RodrigueBotte" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></li>
+        <li><a href="https://discord.gg/Brp8G2S9" target="_blank"><i class="fa-brands fa-discord"
+                    style="color: #ffffff;"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/rodrigue-botte-b828332a3/" target="_blank"><i
+                    class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
+        <li><a href="https://github.com/RodrigueBotte" target="_blank"><i class="fa-brands fa-github"
+                    style="color: #ffffff;"></i></a></li>
     </ul>
 </footer>
