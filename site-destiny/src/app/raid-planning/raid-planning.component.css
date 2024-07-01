@@ -56,16 +56,23 @@ main {
     .container {
         background-color: rgba(255, 255, 255, 0.5);
         width: 850px;
-        height: 60vh;
+        height: 100%;
         margin: 80px 0px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        gap: 15px;
+        padding: 15px;
 
-        .info1 {
+        .info {
             text-align: center;
+            color: black;
+
+            img {
+                width: 400px;
+            }
 
             a {
                 display: flex;
@@ -73,7 +80,6 @@ main {
                 align-items: center;
                 gap: 25px;
                 text-decoration: none;
-                color: black;
 
                 div {
                     p:nth-of-type(1) {

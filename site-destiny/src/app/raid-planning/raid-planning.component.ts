@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActualiteService } from '../actualite.service';
+import { raid } from '../../../ressources/raid';
 
 @Component({
   selector: 'app-raid-planning',
@@ -7,7 +9,8 @@ import { Router } from '@angular/router';
   styleUrl: './raid-planning.component.css'
 })
 export class RaidPlanningComponent {
-  constructor(private router: Router){}
+  raidList: raid[] = [];
+  constructor(private router: Router, private actualiteService: ActualiteService){}
   
   goToActu(){
     // test pour voir si le click se déclenche bien 
@@ -26,5 +29,14 @@ export class RaidPlanningComponent {
   }
   goToAccueil(){
     this.router.navigate(['./accueilPath'])
+  }
+  ngOnInit(): void{
+    this.getRaid();
+  }
+  // appel de la fonction de récupération des informations de raidList
+  getRaid():void{
+    this.actualiteService.getRaid().subscribe(raidList=> this.raidList = raidList);
+    console.log(this.raidList);
+    
   }
 }

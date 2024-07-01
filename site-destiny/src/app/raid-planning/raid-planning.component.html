@@ -9,23 +9,47 @@
 </header>
 <main>
     <div class="container">
-        <!-- <div class="info1" *ngIf="actuList">
-            <a [href]="actuList.url" target="_blank">
-                <div>
-                    <p>{{ actuList.titre }}</p>
-                    <p>{{ actuList.sousTitre }}</p>
-                </div>
-                <img [src]="'assets/imageActu/'+actuList.img" alt="{{ actuList.titre }}">
-            </a>
-        </div> -->
-        <div class="info2">deuxième paquet</div>
-        <div class="info3">troisième paquet</div>
+        <div class="info" *ngIf="raidList">
+            <div>
+                <p>{{ raidList[0].titre }} <br> Lundi 01/07/2024 <br> 20h30 </p>
+            </div>
+            <img [src]="'assets/imageRaid/'+raidList[0].img" alt="{{ raidList[0].titre }}">
+        </div>
+        <div class="info" *ngIf="raidList">
+            <div>
+                <p>{{ raidList[1].titre }} <br> Mardi 02/07/2024 <br> 19h00 </p>
+            </div>
+            <img [src]="'assets/imageRaid/'+raidList[1].img" alt="{{ raidList[1].titre }}">
+        </div><div class="info" *ngIf="raidList">
+            <div>
+                <p>{{ raidList[2].titre }} <br> Mercredi 03/07/2024 <br> 20h00 </p>
+            </div>
+            <img [src]="'assets/imageRaid/'+raidList[2].img" alt="{{ raidList[2].titre }}">
+        </div><div class="info" *ngIf="raidList">
+            <div>
+                <p>{{ raidList[3].titre }} <br> Jeudi 04/07/2024 <br> 20h30 </p>
+            </div>
+            <img [src]="'assets/imageRaid/'+raidList[3].img" alt="{{ raidList[3].titre }}">
+        </div><div class="info" *ngIf="raidList">
+            <div>
+                <p>{{ raidList[6].titre }} <br> Samedi 06/07/2024 <br> 15h00 </p>
+            </div>
+            <img [src]="'assets/imageRaid/'+raidList[6].img" alt="{{ raidList[6].titre }}">
+        </div><div class="info" *ngIf="raidList">
+            <div>
+                <p>{{ raidList[8].titre }} <br> Dimanche 07/07/2024 <br> 18h00 </p>
+            </div>
+            <img [src]="'assets/imageRaid/'+raidList[8].img" alt="{{ raidList[8].titre }}">
+        </div>
     </div>
 </main>
 <footer>
     <ul>
-        <li><a href="https://discord.gg/Brp8G2S9" target="_blank"><i class="fa-brands fa-discord" style="color: #ffffff;"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/rodrigue-botte-b828332a3/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
-        <li><a href="https://github.com/RodrigueBotte" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></li>
+        <li><a href="https://discord.gg/Brp8G2S9" target="_blank"><i class="fa-brands fa-discord"
+                    style="color: #ffffff;"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/rodrigue-botte-b828332a3/" target="_blank"><i
+                    class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
+        <li><a href="https://github.com/RodrigueBotte" target="_blank"><i class="fa-brands fa-github"
+                    style="color: #ffffff;"></i></a></li>
     </ul>
 </footer>
