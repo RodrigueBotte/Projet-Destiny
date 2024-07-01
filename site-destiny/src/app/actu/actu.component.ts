@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ACTU } from '../../../ressources/actuList';
 import { actualite } from '../../../ressources/actu';
 import { ActualiteService } from '../actualite.service';
 
