@@ -37,7 +37,7 @@ export class AccueilComponent implements OnInit {
   }
 
   getActualites(): void {
-    this.actualiteService.getActualites().subscribe(actuList => this.actuList = actuList[0])
+    this.actualiteService.getActualites().subscribe((actuList)=>{ this.actuList = actuList[0]})
     console.log(this.actuList);
     
   }
