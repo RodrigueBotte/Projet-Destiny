@@ -12,8 +12,8 @@
         <div class="info" *ngFor="let newsItem of guideList">
             <a [href]="newsItem.url" target="_blank">
                 <div>
-                        <p>{{ newsItem.titre }}</p>
-                        <img [src]="'assets/imageActu/'+newsItem.img" alt="{{ newsItem.titre }}">
+                    <p>{{ newsItem.titre }}</p>
+                    <img [src]="'assets/imageActu/'+newsItem.img" alt="{{ newsItem.titre }}">
                 </div>
             </a>
         </div>

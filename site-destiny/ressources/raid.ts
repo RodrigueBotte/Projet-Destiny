@@ -1,4 +1,6 @@
 export type raid={
     titre: string,
-    img: string
+    img: string,
+    date: string,
+    heure: string
 }

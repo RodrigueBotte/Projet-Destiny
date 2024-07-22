@@ -18,14 +18,25 @@
                 <img [src]="'assets/imageActu/'+actuList.img" alt="{{ actuList.titre }}">
             </a>
         </div>
-        <div class="info2">Prochain Raid à venir</div>
+        <div class="info2" *ngIf="raidList">
+            <img [src]="'assets/imageRaid/'+raidList.img" alt="{{raidList
+            .titre}}">
+            <div>
+                <p>{{ raidList.titre }}</p>
+                <p>{{ raidList.date }}</p>
+                <p>{{ raidList.heure }}</p>
+            </div>
+        </div>
         <div class="info3">Dernier Build créé</div>
     </div>
 </main>
 <footer>
     <ul>
-        <li><a href="https://discord.gg/Brp8G2S9" target="_blank"><i class="fa-brands fa-discord" style="color: #ffffff;"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/rodrigue-botte-b828332a3/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
-        <li><a href="https://github.com/RodrigueBotte" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></li>
+        <li><a href="https://discord.gg/Brp8G2S9" target="_blank"><i class="fa-brands fa-discord"
+                    style="color: #ffffff;"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/rodrigue-botte-b828332a3/" target="_blank"><i
+                    class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
+        <li><a href="https://github.com/RodrigueBotte" target="_blank"><i class="fa-brands fa-github"
+                    style="color: #ffffff;"></i></a></li>
     </ul>
 </footer>
