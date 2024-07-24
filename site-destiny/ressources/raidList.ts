@@ -33,7 +33,7 @@ export const RAID: raid[] = [
         heure: "20h30"
     },
     {
-        titre :"Le dernier Voeux",
+        titre :"Le Dernier Voeux",
         img: "dernierVoeux.jpg",
         date: "Samedi 26/07/2024",
         heure: "21h"

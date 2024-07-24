@@ -56,25 +56,31 @@ main {
     .container {
         background-color: rgba(255, 255, 255, 0.5);
         width: 75vw;
-        height: 60vh;
+        height: auto;
+        padding: 35px 25px;
         margin: 80px 0px;
+        gap: 35px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        color: black;
+        color: white;
 
         .info1 {
             text-align: center;
+
+            img {
+                width: 350px;
+            }
 
             a {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                gap: 25px;
+                gap: 75px;
                 text-decoration: none;
-                color: black;
+                color: white;
 
                 div {
                     p:nth-of-type(1) {
@@ -89,7 +95,7 @@ main {
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            gap: 25px;
+            gap: 75px;
 
             img {
                 width: 350px;
@@ -137,4 +143,73 @@ footer {
 @font-face {
     font-family: oxanium;
     src: url(/assets/Oxanium-VariableFont_wght.ttf);
+}
+
+@media (width <=1000px) {
+    main {
+        .container {
+            padding-top: 25px;
+            gap: 25px;
+
+            .info1 {
+                a {
+                    gap: 25px;
+                    flex-direction: column;
+                }
+            }
+
+            .info2 {
+                gap: 25px;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
+
+@media (width <=550px) {
+    header {
+        height: 25vh;
+        h1 {
+            font-size: 40px;
+        }
+
+        ul {
+            font-size: 20px;
+        }
+    }
+
+    main {
+        .container {
+            .info1 {
+                font-size: 12px;
+
+                img {
+                    width: 250px;
+                }
+
+                a {
+                    div {
+                        p:nth-of-type(1) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .info2 {
+                font-size: 12px;
+                gap: 15px;
+
+                img {
+                    width: 250px;
+                }
+
+                div {
+                    p:nth-of-type(1) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -125,3 +125,52 @@ p, h1, li{
     font-family: oxanium;
     src: url(../../assets/Oxanium-VariableFont_wght.ttf);
 }
+
+@media (width <=880px) {
+    header{
+        height: 25vh;
+    }
+    main {
+        .container {
+            padding-top: 25px;
+            gap: 25px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+}
+
+@media (width <=550px) {
+    header {
+        height: 25vh;
+        h1 {
+            font-size: 40px;
+        }
+
+        ul {
+            font-size: 20px;
+        }
+    }
+
+    main {
+        .container{
+            display: flex;
+            flex-direction: column;
+            padding: 25px 25px;
+            font-size: 15px;
+            img{
+                width: 250px;
+                height: 150px;
+            }
+            a{
+                p:nth-of-type(1) {
+                    font-size: 20px;
+                    text-decoration: underline;
+                    text-underline-offset: 0.1em;
+                }
+
+            }
+        }
+    }
+}
