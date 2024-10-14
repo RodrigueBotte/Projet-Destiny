@@ -15,7 +15,7 @@ header {
 
     h1 {
         color: white;
-        font-size: 60px;
+        font-size: 5rem;
         text-align: center;
         padding-top: 60px;
         cursor: pointer;
@@ -32,7 +32,7 @@ header {
         list-style-type: none;
         justify-content: space-around;
         align-items: center;
-        font-size: 25px;
+        font-size: 2rem;
 
         li {
             cursor: pointer;
@@ -84,7 +84,7 @@ main {
 
                 div {
                     p:nth-of-type(1) {
-                        font-size: 40px;
+                        font-size: 2.5rem;
                     }
                 }
             }
@@ -105,7 +105,7 @@ main {
                 text-align: center;
 
                 p:nth-of-type(1) {
-                    font-size: 40px;
+                    font-size: 2.5rem;
                 }
             }
         }
@@ -146,6 +146,14 @@ footer {
 }
 
 @media (width <=1000px) {
+    header{
+        h1{
+            font-size: 3.5rem;
+        }
+        ul{
+            font-size: 2rem;
+        }
+    }
     main {
         .container {
             padding-top: 25px;
@@ -170,18 +178,18 @@ footer {
     header {
         height: 25vh;
         h1 {
-            font-size: 40px;
+            font-size: 2.5rem;
         }
 
         ul {
-            font-size: 20px;
+            font-size: 1rem;
         }
     }
 
     main {
         .container {
             .info1 {
-                font-size: 12px;
+                font-size: .8rem;
 
                 img {
                     width: 250px;
@@ -190,14 +198,14 @@ footer {
                 a {
                     div {
                         p:nth-of-type(1) {
-                            font-size: 20px;
+                            font-size: 1.5rem;
                         }
                     }
                 }
             }
 
             .info2 {
-                font-size: 12px;
+                font-size: .8rem;
                 gap: 15px;
 
                 img {
@@ -206,7 +214,7 @@ footer {
 
                 div {
                     p:nth-of-type(1) {
-                        font-size: 20px;
+                        font-size: 1.5rem;
                     }
                 }
             }
