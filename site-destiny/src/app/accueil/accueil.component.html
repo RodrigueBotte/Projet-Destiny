@@ -1,5 +1,6 @@
 <header>
-    <h1 (click)="goToAccueil()">Projet Destiny</h1>
+    <!-- chaque fonction permet, au clique sur le mot, de voyager de page en page -->
+    <h1 (click)="goToAccueil()">La Taverne du Voyageur</h1>
     <ul>
         <li (click)="goToActu()">Actu</li>
         <li (click)="goToBuild()">Build</li>
@@ -9,6 +10,7 @@
 </header>
 <main>
     <div class="container">
+        <!-- on vérifie si la liste existe, dans ce cas, on va venir chercher les information situé dans le fichier en question -->
         <div class="info1" *ngIf="actuList">
             <a [href]="actuList.url" target="_blank">
                 <div>
@@ -31,6 +33,7 @@
     </div>
 </main>
 <footer>
+    <!-- la liste est composé d'un lien représenté par un icone provenant de font Awesome, celui ci ouvrira un nouvel onglet grâce au target ="_blank" -->
     <ul>
         <li><a href="https://discord.gg/Brp8G2S9" target="_blank"><i class="fa-brands fa-discord"
                     style="color: #ffffff;"></i></a></li>
